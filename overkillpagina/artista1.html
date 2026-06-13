@@ -39,9 +39,11 @@ body{
     padding:30px 0 50px 0;
 }
 
+/* HEADER */
+
 .header{
     text-align:center;
-    margin-bottom:25px;
+    margin-bottom:10px;
 }
 
 .title{
@@ -60,19 +62,44 @@ body{
     margin-top:10px;
 }
 
+/* BACK BUTTON */
+
+.back{
+    display:inline-block;
+    margin:15px 0 25px 0;
+    font-family:'Share Tech Mono',monospace;
+    color:var(--red);
+    text-decoration:none;
+    letter-spacing:2px;
+    font-size:12px;
+    transition:.2s;
+}
+
+.back:hover{
+    color:var(--text);
+    transform:translateX(-3px);
+}
+
+/* CARD */
+
 .card{
     background:var(--panel);
     padding:20px;
     margin-bottom:20px;
 }
 
+/* IMAGE */
+
 .artist-img{
     width:100%;
-    max-height:420px;
+    max-height:520px;
     object-fit:cover;
+    object-position: 50% 20%;
     filter:grayscale(100%);
     border-bottom:3px solid var(--red);
 }
+
+/* LABELS */
 
 .label{
     font-family:'Share Tech Mono',monospace;
@@ -81,6 +108,8 @@ body{
     letter-spacing:2px;
     margin-top:10px;
 }
+
+/* INFO */
 
 .info{
     font-family:'Share Tech Mono',monospace;
@@ -97,6 +126,8 @@ body{
     color:var(--text);
     margin-top:15px;
 }
+
+/* DROPDOWN */
 
 details{
     background:var(--card);
@@ -119,6 +150,8 @@ summary{
     border-left:2px solid var(--muted);
     font-size:13px;
 }
+
+/* FOOTER */
 
 .footer{
     margin-top:30px;
@@ -152,6 +185,11 @@ summary{
         </div>
     </div>
 
+    <!-- BACK -->
+    <a href="index.html" class="back">
+        ← VOLVER AL ARCHIVO PRINCIPAL
+    </a>
+
     <!-- IMAGE -->
     <div class="card">
         <img src="img/locals/local1.png" class="artist-img" alt="Artista 01">
@@ -159,7 +197,7 @@ summary{
         <div class="label">SEÑAL VISUAL // DOCUMENTO</div>
     </div>
 
-    <!-- INFO BASE -->
+    <!-- INFO -->
     <div class="card">
 
         <div class="label">DATOS DEL OPERADOR</div>
@@ -184,21 +222,21 @@ summary{
 
     </div>
 
-    <!-- TRACKS DESPLEGABLES -->
+    <!-- TRACKS -->
     <details>
 
         <summary>PROTOCOLO DE AUDIO // 3 TRACKS RECOMENDADOS</summary>
 
         <div class="track">
-            01 // ARTIST TRACK — “Industrial Drift” (145 BPM)
+            01 // INDUSTRIAL DRIFT — 145 BPM
         </div>
 
         <div class="track">
-            02 // ARTIST TRACK — “Concrete Signal” (147 BPM)
+            02 // CONCRETE SIGNAL — 147 BPM
         </div>
 
         <div class="track">
-            03 // ARTIST TRACK — “Schranz Pattern X” (150 BPM)
+            03 // SCHRANZ PATTERN X — 150 BPM
         </div>
 
     </details>

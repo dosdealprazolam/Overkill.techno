@@ -62,7 +62,7 @@ body{
     margin-top:10px;
 }
 
-/* BACK BUTTON */
+/* BACK */
 
 .back{
     display:inline-block;
@@ -94,12 +94,12 @@ body{
     width:100%;
     max-height:520px;
     object-fit:cover;
-    object-position: 50% 20%;
+    object-position:50% 20%;
     filter:grayscale(100%);
     border-bottom:3px solid var(--red);
 }
 
-/* LABELS */
+/* LABEL */
 
 .label{
     font-family:'Share Tech Mono',monospace;
@@ -127,7 +127,7 @@ body{
     margin-top:15px;
 }
 
-/* DROPDOWN */
+/* TRACKS */
 
 details{
     background:var(--card);
@@ -143,12 +143,38 @@ summary{
     letter-spacing:2px;
 }
 
+/* TRACK ITEM */
+
 .track{
     margin-top:10px;
-    padding:10px;
     background:var(--panel);
-    border-left:2px solid var(--muted);
+    transition:.2s;
+}
+
+.track a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px;
+    text-decoration:none;
+    color:var(--text);
+}
+
+.track img{
+    width:42px;
+    height:42px;
+    object-fit:cover;
+    filter:grayscale(100%);
+    border-left:2px solid var(--red);
+}
+
+.track-title{
     font-size:13px;
+}
+
+.track:hover{
+    background:#35322f;
+    transform:translateX(3px);
 }
 
 /* FOOTER */
@@ -192,7 +218,7 @@ summary{
 
     <!-- IMAGE -->
     <div class="card">
-        <img src="img/locals/local1.png" class="artist-img" alt="Artista 01">
+        <img src="img/locals/local1.png" class="artist-img" alt="Artista">
 
         <div class="label">SEÑAL VISUAL // DOCUMENTO</div>
     </div>
@@ -209,14 +235,13 @@ summary{
         </div>
 
         <div class="bio">
-           Hay sets que se escuchan y experiencias que se graban en el cuerpo. T3ZLA ha construido su propio camino bajo una premisa clara: el sonido es presión.
-Su propuesta es un viaje implacable de tensión sostenida. A través de un techno crudo y envolvente, diseña atmósferas profundas y paisajes hipnóticos donde el exterior desaparece. 
-Entre el techno pesado y las texturas analógicas, la energía no se libera, se acumula, transformando la pista en un espacio mental y magnético.
+            Hay sets que se escuchan y experiencias que se graban en el cuerpo.
+            T3ZLA trabaja el sonido como presión constante.
+
             <br><br>
 
-            Su trabajo se enfoca en la construcción de sets como narrativa técnica:
-            progresión sin concesiones, densidad rítmica y ausencia de elementos decorativos.
-            Cada sesión funciona como transmisión controlada dentro del espectro OVERKILL.
+            Su narrativa sonora construye tensión sostenida,
+            donde el techno se vuelve espacio mental y físico al mismo tiempo.
         </div>
 
     </div>
@@ -227,15 +252,39 @@ Entre el techno pesado y las texturas analógicas, la energía no se libera, se 
         <summary>PROTOCOLO DE AUDIO // 3 TRACKS RECOMENDADOS</summary>
 
         <div class="track">
-            01 // INDUSTRIAL DRIFT — 145 BPM
+
+            <a href="https://soundcloud.com/your-link-1" target="_blank">
+
+                <img src="img/tracks/track1.jpg" alt="track 1">
+
+                <div class="track-title">01 // INDUSTRIAL DRIFT — 145 BPM</div>
+
+            </a>
+
         </div>
 
         <div class="track">
-            02 // CONCRETE SIGNAL — 147 BPM
+
+            <a href="https://soundcloud.com/your-link-2" target="_blank">
+
+                <img src="img/tracks/track2.jpg" alt="track 2">
+
+                <div class="track-title">02 // CONCRETE SIGNAL — 147 BPM</div>
+
+            </a>
+
         </div>
 
         <div class="track">
-            03 // SCHRANZ PATTERN X — 150 BPM
+
+            <a href="https://soundcloud.com/your-link-3" target="_blank">
+
+                <img src="img/tracks/track3.jpg" alt="track 3">
+
+                <div class="track-title">03 // SCHRANZ PATTERN X — 150 BPM</div>
+
+            </a>
+
         </div>
 
     </details>

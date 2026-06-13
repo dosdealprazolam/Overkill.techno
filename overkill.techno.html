@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OVERKILL.TECHNO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#0A0A08;
+    --panel:#1A1917;
+    --card:#2E2D2A;
+    --text:#E8E4DC;
+    --muted:#7A7875;
+    --red:#CC2A2A;
+    --green:#00ff66;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:min(900px,90%);
+    margin:auto;
+    padding:30px 0 50px 0;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.logo{
+    width:320px;
+    max-width:85%;
+    margin-bottom:4px;
+}
+
+.tagline{
+    color:var(--red);
+    font-family:'Share Tech Mono',monospace;
+    letter-spacing:2px;
+    font-size:12px;
+    margin-bottom:4px;
+}
+
+.meta{
+    color:var(--muted);
+    font-family:'Share Tech Mono',monospace;
+    font-size:14px;
+    line-height:1.4;
+}
+
+.active{
+    color:var(--green);
+    font-weight:bold;
+    text-shadow:0 0 8px rgba(0,255,102,.8);
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section-title{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:2rem;
+    margin-bottom:15px;
+    border-left:4px solid var(--red);
+    padding-left:10px;
+}
+
+.card{
+    background:var(--panel);
+    padding:20px;
+}
+
+.link{
+    display:block;
+    text-decoration:none;
+    color:var(--text);
+    background:var(--card);
+    padding:15px;
+    margin-bottom:10px;
+    font-family:'Share Tech Mono',monospace;
+    border-left:3px solid transparent;
+    transition:.2s;
+}
+
+.link:hover{
+    border-left:3px solid var(--red);
+    background:#35322f;
+    transform:translateX(4px);
+}
+.archive-grid{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin:15px 0 30px 0;
+    flex-wrap:wrap;
+}
+
+.archive-button{
+    text-decoration:none;
+    color:var(--red);
+
+    font-family:'Share Tech Mono',monospace;
+    font-size:14px;
+    letter-spacing:2px;
+
+    transition:.2s;
+}
+
+.archive-button:hover{
+    color:var(--text);
+}
+
+@media(max-width:768px){
+
+    .archive-grid{
+        grid-template-columns:1fr;
+    }
+
+    .archive-button{
+        min-height:70px;
+        font-size:1.5rem;
+    }
+
+}
+.footer{
+    margin-top:40px;
+    border-top:1px solid var(--card);
+    padding-top:20px;
+    color:var(--muted);
+    font-family:'Share Tech Mono',monospace;
+    font-size:13px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+    .logo{
+        width:220px;
+    }
+
+    .meta{
+        font-size:12px;
+    }
+
+    .section-title{
+        font-size:1.6rem;
+    }
+
+    .link{
+        font-size:14px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ====================================== -->
+    <!-- CABECERA                               -->
+    <!-- ====================================== -->
+<div class="header">
+
+    <img src="img/logo1.png"
+         alt="OVERKILL.TECHNO"
+         class="logo">
+
+    <div class="tagline">
+        SIGNAL LOCKED // TRANSMISSION ACTIVE
+    </div>
+
+    <div class="meta">
+        NODE: LIMA-01 //
+        STATUS:
+        <span class="active">ACTIVE</span><br>
+
+        FREQ: 143.7 MHz
+    </div>
+
+</div>
+
+<div class="section">
+
+    <div class="archive-grid">
+
+        <a class="archive-button"
+           href="locals.html">
+
+           LOCALES
+
+        </a>
+
+        <a class="archive-button"
+           href="residentes.html">
+
+           | RESIDENTES
+
+        </a>
+
+        <a class="archive-button"
+           href="eventos.html">
+
+           | EVENTOS
+
+        </a>
+
+    </div>
+
+</div>
+
+
+    <!-- ====================================== -->
+    <!-- TRANSMISIÓN ACTIVA                     -->
+    <!-- ====================================== -->
+
+    <div class="section">
+
+        <div class="section-title">
+            TRANSMISIÓN ACTIVA | LOCAL SIGNAL - 001
+        </div>
+
+        <div class="card">
+
+            <a class="link"
+               href="https://soundcloud.com/t3zla_dj/umbral-magn-tico-t3zla-dj-set"
+               target="_blank">
+
+               LS-001 A // T3ZLA || UMBRAL MAGNETICO 
+
+            </a>
+
+            <a class="link"
+               href="https://www.youtube.com/"
+               target="_blank">
+
+               LS-001 B // SEGUNDO SET
+
+            </a>
+
+            <a class="link"
+               href="https://www.youtube.com/"
+               target="_blank">
+
+               LS-001 C // TERCER SET
+
+            </a>
+
+        </div>
+        <!--PONER TRANSMISIONES PASADAS-->
+
+    </div>
+
+     <div class="section">
+
+        <div class="section-title">
+            TRANSMISIÓN LATENTE | SOUND WEAPON - 001
+        </div>
+        <div class="card">
+            <a class="link"
+            href= "https://soundcloud.com/noss-label/radical-future-naij-run-it-back-2?in=noss-label/sets/looking-at-the-sky-ep"
+            target="_blank">
+
+            RADICAL FUTURE X NAIJ // RUN IT BACK (NOSS) 
+        </a>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- ESTACIÓN                               -->
+    <!-- ====================================== -->
+
+    <div class="section">
+
+        <div class="section-title">
+            ESTACIÓN
+        </div>
+
+        <div class="card">
+
+            <a class="link"
+               href="https://www.instagram.com/overkill.techno/"
+               target="_blank">
+
+               INSTAGRAM
+
+            </a>
+
+            <a class="link"
+               href="https://t.me/"
+               target="_blank">
+
+               TELEGRAM
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ====================================== -->
+    <!-- PIE                                    -->
+    <!-- ====================================== -->
+
+    <div class="footer">
+
+        SIG: OKT//WT-001<br>
+
+        STATUS:
+        <span class="active">ACTIVE</span><br>
+
+        NODE: LIMA-01<br><br>
+
+        OVERKILL.TECHNO // PERÜ // UNDERGROUND
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

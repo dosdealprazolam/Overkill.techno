@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OVERKILL.TECHNO // RESIDENTES</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#0A0A08;
+    --panel:#1A1917;
+    --card:#2E2D2A;
+    --text:#E8E4DC;
+    --muted:#7A7875;
+    --red:#CC2A2A;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:min(1000px,90%);
+    margin:auto;
+    padding:30px 0 60px;
+}
+
+.back-link{
+    display:inline-block;
+    margin-bottom:30px;
+    text-decoration:none;
+    color:var(--red);
+    font-family:'Share Tech Mono', monospace;
+    letter-spacing:1px;
+}
+
+.back-link:hover{
+    color:var(--text);
+}
+
+.header{
+    margin-bottom:40px;
+}
+
+.page-title{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:3rem;
+    letter-spacing:2px;
+}
+
+.page-subtitle{
+    color:var(--muted);
+    font-family:'Share Tech Mono',monospace;
+    font-size:12px;
+    margin-top:5px;
+}
+
+.residents-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.resident-card{
+    text-decoration:none;
+    color:var(--text);
+}
+
+.resident-card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    filter:grayscale(100%);
+    transition:.3s;
+}
+
+.resident-card:hover img{
+    transform:scale(1.02);
+    filter:grayscale(0%);
+}
+
+.resident-name{
+    margin-top:10px;
+    text-align:center;
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:1.5rem;
+    letter-spacing:1px;
+}
+
+.resident-card:hover .resident-name{
+    color:var(--red);
+}
+
+.resident-code{
+    text-align:center;
+    color:var(--muted);
+    font-family:'Share Tech Mono',monospace;
+    font-size:11px;
+    margin-top:4px;
+}
+
+.footer{
+    margin-top:60px;
+    padding-top:20px;
+    border-top:1px solid var(--card);
+    color:var(--muted);
+    font-family:'Share Tech Mono',monospace;
+    font-size:12px;
+}
+
+@media(max-width:768px){
+
+    .residents-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .page-title{
+        font-size:2rem;
+    }
+
+    .resident-name{
+        font-size:1.2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="overkill.techno.html" class="back-link">
+← VOLVER A ESTACIÓN
+</a>
+
+<div class="header">
+
+    <div class="page-title">
+        RESIDENTES
+    </div>
+
+    <div class="page-subtitle">
+        ARCHIVE NODE // RESIDENT OPERATORS
+    </div>
+
+</div>
+
+<div class="residents-grid">
+
+    <a href="residente1.html" class="resident-card">
+        <img src="img/residentes/residente1.png" alt="RADICAL FUTURE">
+        <div class="resident-name">RADICAL FUTURE</div>
+        <div class="resident-code">SIG: OKT//RES-001</div>
+    </a>
+
+    <a href="residente2.html" class="resident-card">
+        <img src="img/residentes/residente2.jpg" alt="DJ">
+        <div class="resident-name">NOMBRE DJ</div>
+        <div class="resident-code">SIG: OKT//RES-002</div>
+    </a>
+
+    <a href="residente3.html" class="resident-card">
+        <img src="img/residentes/residente3.jpg" alt="DJ">
+        <div class="resident-name">NOMBRE DJ</div>
+        <div class="resident-code">SIG: OKT//RES-003</div>
+    </a>
+
+    <a href="residente4.html" class="resident-card">
+        <img src="img/residentes/residente4.jpg" alt="DJ">
+        <div class="resident-name">NOMBRE DJ</div>
+        <div class="resident-code">SIG: OKT//RES-004</div>
+    </a>
+
+    <a href="residente5.html" class="resident-card">
+        <img src="img/residentes/residente5.jpg" alt="DJ">
+        <div class="resident-name">NOMBRE DJ</div>
+        <div class="resident-code">SIG: OKT//RES-005</div>
+    </a>
+
+    <a href="residente6.html" class="resident-card">
+        <img src="img/residentes/residente6.jpg" alt="DJ">
+        <div class="resident-name">NOMBRE DJ</div>
+        <div class="resident-code">SIG: OKT//RES-006</div>
+    </a>
+
+</div>
+
+<div class="footer">
+
+NODE: LIMA-01<br>
+STATUS: ACTIVE<br><br>
+
+OVERKILL.TECHNO // RESIDENT ARCHIVE
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OVERKILL.TECHNO // ARTISTA 01</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#0A0A08;
+    --panel:#1A1917;
+    --card:#2E2D2A;
+    --text:#E8E4DC;
+    --muted:#7A7875;
+    --red:#CC2A2A;
+    --green:#00ff66;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:min(900px,90%);
+    margin:auto;
+    padding:30px 0 50px 0;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.title{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:2.2rem;
+    letter-spacing:2px;
+    border-left:4px solid var(--red);
+    padding-left:10px;
+    display:inline-block;
+}
+
+.meta{
+    font-family:'Share Tech Mono',monospace;
+    color:var(--muted);
+    font-size:13px;
+    margin-top:10px;
+}
+
+/* BACK */
+
+.back{
+    display:inline-block;
+    margin:15px 0 25px 0;
+    font-family:'Share Tech Mono',monospace;
+    color:var(--red);
+    text-decoration:none;
+    letter-spacing:2px;
+    font-size:12px;
+    transition:.2s;
+}
+
+.back:hover{
+    color:var(--text);
+    transform:translateX(-3px);
+}
+
+/* CARD */
+
+.card{
+    background:var(--panel);
+    padding:20px;
+    margin-bottom:20px;
+}
+
+/* IMAGE */
+
+.artist-img{
+    width:100%;
+    max-height:520px;
+    object-fit:cover;
+    object-position:50% 20%;
+    filter:grayscale(100%);
+    border-bottom:3px solid var(--red);
+}
+
+/* LABEL */
+
+.label{
+    font-family:'Share Tech Mono',monospace;
+    font-size:12px;
+    color:var(--red);
+    letter-spacing:2px;
+    margin-top:10px;
+}
+
+/* INFO */
+
+.info{
+    font-family:'Share Tech Mono',monospace;
+    font-size:13px;
+    color:var(--text);
+    line-height:1.6;
+    margin-top:10px;
+}
+
+.bio{
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    line-height:1.6;
+    color:var(--text);
+    margin-top:15px;
+}
+
+/* TRACKS */
+
+details{
+    background:var(--card);
+    padding:15px;
+    margin-top:20px;
+    border-left:3px solid var(--red);
+    font-family:'Share Tech Mono',monospace;
+}
+
+summary{
+    cursor:pointer;
+    color:var(--red);
+    letter-spacing:2px;
+}
+
+/* TRACK ITEM */
+
+.track{
+    margin-top:10px;
+    background:var(--panel);
+    transition:.2s;
+}
+
+.track a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px;
+    text-decoration:none;
+    color:var(--text);
+}
+
+.track img{
+    width:42px;
+    height:42px;
+    object-fit:cover;
+    filter:grayscale(100%);
+    border-left:2px solid var(--red);
+}
+
+.track-title{
+    font-size:13px;
+}
+
+.track:hover{
+    background:#35322f;
+    transform:translateX(3px);
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top:30px;
+    text-align:center;
+    font-family:'Share Tech Mono',monospace;
+    font-size:12px;
+    color:var(--muted);
+    border-top:1px solid var(--card);
+    padding-top:15px;
+}
+
+.active{
+    color:var(--green);
+    text-shadow:0 0 6px rgba(0,255,102,.6);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="title">LF-002 // HOSHELLPICK</div>
+        <div class="meta">
+            SECTOR: LOCAL FREQUENCY // NODE: LIMA-01 //
+            STATUS: <span class="active">ARCHIVE ACTIVE</span>
+        </div>
+    </div>
+
+    <!-- BACK -->
+    <a href="locals.html" class="back">
+        ← VOLVER AL ARCHIVO PRINCIPAL
+    </a>
+
+    <!-- IMAGE -->
+    <div class="card">
+        <a href="https://www.instagram.com/hoshellpick/" target="_blank">
+            <img src="img/locals/local2.jpg" class="artist-img" alt="Artista">
+        </a>
+        <div class="label">SEÑAL VISUAL // DOCUMENTO</div>
+    </div>
+
+    <!-- INFO -->
+    <div class="card">
+
+        <div class="label">DATOS DEL OPERADOR</div>
+
+        <div class="info">
+            <strong>Fecha de nacimiento:</strong> 01 / 05 / 1998<br>
+            <strong>Géneros:</strong> Peaktime · Industrial · hypnotic <br>
+            <strong>Año de inicio:</strong> xxxx
+        </div>
+
+        <div class="bio">
+HOSHELLPICK ES UN DJ Y PRODUCTOR VENEZOLANO RADICADO EN LIMA, PERÚ. SU SONIDO SE DEFINE POR LA ENERGÍA
+CRUDA, VIBRAS INDUSTRIALES Y CAOS CATÁRTICO QUE CARACTERIZA EL UNDERGROUND DEL HARDTECHNO Y SCHRANZ.
+CON SETS INTENSOS A 150+ BPM, TRANSFORMA RUIDO, PRESIÓN Y RABIA EN PURA ADRENALINA PARA DANCEFLOORS
+OSCUROS Y RAVES SIN PIEDAD.
+SUS SERIES “TUNZ TUNZ TUNZ” (VOL. 1 Y VOL. 2) SON VIAJES SIN RETORNO: BOMBOS IMPLACABLES, DISTORSIONES
+PESADAS, TEXTURAS INDUSTRIALES Y DROPS VISCERALES CON INFLUENCIAS DIRECTAS DEL SCHRANZ CLÁSICO.
+PERFECTO PARA SESIONES DARK ROOM, WARM-UPS BRUTALES O DESTRUCCIÓN TOTAL DEL PISO A MÁXIMA
+VELOCIDAD.
+ 
+            <br><br>
+
+           DESDE VENEZUELA RESONANDO EN PERÚ, HOSHELLPICK CONSTRUYE UNA PRESENCIA SÓLIDA EN LA ESCENA
+UNDERGROUND LATINOAMERICANA CON PARTICIPACIONES EN CONCURSOS COMO DARK SESSIONS DJ CONTEST Y
+APARICIONES EN EVENTOS LOCALES.
+
+        </div>
+
+    </div>
+
+    <!-- TRACKS -->
+    <details>
+
+        <summary>PROTOCOLO DE AUDIO // 3 TRACKS RECOMENDADOS</summary>
+
+        <div class="track">
+
+            <a href="https://soundcloud.com/t3zla_dj/metanoiat3zla-dj-set">
+
+                <img src="img/misc/mp3.png" alt="track 1">
+
+                <div class="track-title">01 //  METANOIA | T3ZLA DJ SET  </div>
+
+            </a>
+
+        </div>
+
+        <div class="track">
+
+            <a href="https://soundcloud.com/fleurs-records/fleurs-sessions-06-t3zla">
+
+                <img src="img/misc/mp3.png" alt="track 2">
+
+                <div class="track-title">02 // Fleurs Session's 06 - T3zla </div>
+
+            </a>
+
+        </div>
+
+        <div class="track">
+
+            <a href="https://www.youtube.com/watch?v=udO609QmIR8">
+
+                <img src="img/misc/mp3.png" alt="track 3">
+
+                <div class="track-title"> 03 // Set baalsaal </div>
+
+            </a>
+
+        </div>
+
+    </details>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        SIG: LF-001 // OVERKILL.TECHNO<br>
+        NODE: LIMA-01 // STATUS: ACTIVE
+    </div>
+
+</div>
+
+</body>
+
+</html>
